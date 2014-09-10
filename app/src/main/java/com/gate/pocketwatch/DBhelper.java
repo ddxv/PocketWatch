@@ -14,10 +14,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBhelper extends SQLiteOpenHelper {
 
-    // TABLE INFORMATTION
+    // TABLES INFORMATTION
     public static final String TABLE_MEMBER = "member";
+
+
     public static final String MEMBER_ID = "_id";
     public static final String MEMBER_NAME = "name";
+    public static final String MEMBER_PASSWORD = "mmeberpassword";
 
     // DATABASE INFORMATION
     static final String DB_NAME = "MEMBER.DB";
