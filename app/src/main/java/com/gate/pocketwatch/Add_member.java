@@ -5,7 +5,7 @@ package com.gate.pocketwatch;
  * from tutorial: http://www.tutorialsbuzz.com/2013/11/android-sqlite-database-with.html
  */
 
-import com.gate.pocketwatch.R;
+
 
 import android.app.Activity;
 import android.content.Intent;
