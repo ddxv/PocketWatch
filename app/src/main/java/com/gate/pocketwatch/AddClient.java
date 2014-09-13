@@ -6,23 +6,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-/*
-this class is for an admin, it's an overview of a company's users
- */
-
-public class CompanyMembers extends Activity {
+public class AddClient extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_company_members);
+        setContentView(R.layout.activity_add_client);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.company_members, menu);
+        getMenuInflater().inflate(R.menu.add_client, menu);
         return true;
     }
 

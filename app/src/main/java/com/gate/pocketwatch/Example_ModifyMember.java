@@ -1,12 +1,15 @@
 package com.gate.pocketwatch;
 
 /**
+ *
  * Created by ddxv on 9/11/2014.
+ *
+ * based on tutorial, for example purposes only
+ *
  */
 
 
 
-import com.gate.pocketwatch.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +18,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class Modify_member extends Activity implements OnClickListener {
+public class Example_ModifyMember extends Activity implements OnClickListener {
 
     EditText et;
     Button edit_bt, delete_bt;
@@ -70,7 +73,7 @@ public class Modify_member extends Activity implements OnClickListener {
     public void returnHome() {
 
         Intent home_intent = new Intent(getApplicationContext(),
-                MembersActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                Example_MembersActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
         startActivity(home_intent);
     }

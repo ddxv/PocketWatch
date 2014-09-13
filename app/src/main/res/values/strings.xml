@@ -18,5 +18,8 @@
     <string name="title_activity_welcome_screen">WelcomeScreen</string>
     <string name="title_activity_new_company">NewCompany</string>
     <string name="title_activity_company_members">CompanyMembers</string>
+    <string name="title_activity_manage_members">ManageMembers</string>
+    <string name="title_activity_manage_clients">ManageClients</string>
+    <string name="title_activity_add_client">AddClient</string>
 
 </resources>

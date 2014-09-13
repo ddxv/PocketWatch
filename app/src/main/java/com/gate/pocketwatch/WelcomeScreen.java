@@ -18,7 +18,8 @@ import android.widget.Button;
 
 
 /*
- *this activity is linked to in the Android Manifest, does this make it the first app to appear?
+ *
+ * this activity is linked to in the Android Manifest
  *
  */
 
@@ -37,19 +38,34 @@ public class WelcomeScreen extends Activity {
         Button companylogin = (Button) findViewById(R.id.companyloginb);
         Button companyadd = (Button) findViewById(R.id.addcompanyb);
 
-    companyadd.setOnClickListener(new OnClickListener() {
 
+
+    //For Creating a new Company
+    companyadd.setOnClickListener(new OnClickListener() {
 
         @Override
         public void onClick(View v) {
-
             Intent i = new Intent(getApplicationContext(), NewCompany.class);
-
             startActivity(i);
         }
-    }
+    });
 
-        );
+
+        //For logging in to a company
+        companylogin.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //This will need to authenticate a login using Company Username & Password
+
+                Intent i = new Intent(getApplicationContext(), ManageClients.class);
+                startActivity(i);
+            }
+        });
+
+
+
+
     }
 
 

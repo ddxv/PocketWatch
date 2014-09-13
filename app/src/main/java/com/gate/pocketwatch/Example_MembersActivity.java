@@ -22,7 +22,7 @@ package com.gate.pocketwatch;
     import android.widget.SimpleCursorAdapter;
     import android.widget.TextView;
 
-    public class MembersActivity extends Activity {
+    public class Example_MembersActivity extends Activity {
 
         Button addmem_bt;
         ListView lv;
@@ -42,7 +42,7 @@ package com.gate.pocketwatch;
 
                 @Override
                 public void onClick(View v) {
-                    Intent add_mem = new Intent(MembersActivity.this, Add_member.class);
+                    Intent add_mem = new Intent(Example_MembersActivity.this, Example_AddMember.class);
                     startActivity(add_mem);
                 }
             });
@@ -53,7 +53,7 @@ package com.gate.pocketwatch;
             int[] to = new int[] { R.id.member_id, R.id.member_name };
 
             SimpleCursorAdapter adapter = new SimpleCursorAdapter(
-                    MembersActivity.this, R.layout.view_member_entry, cursor, from, to);
+                    Example_MembersActivity.this, R.layout.view_member_entry, cursor, from, to);
 
             adapter.notifyDataSetChanged();
             lv.setAdapter(adapter);
@@ -70,7 +70,7 @@ package com.gate.pocketwatch;
                     String memberName_val = memName_tv.getText().toString();
 
                     Intent modify_intent = new Intent(getApplicationContext(),
-                            Modify_member.class);
+                            Example_ModifyMember.class);
                     modify_intent.putExtra("memberName", memberName_val);
                     modify_intent.putExtra("memberID", memberID_val);
                     startActivity(modify_intent);

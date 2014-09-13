@@ -21,8 +21,16 @@
             android:label="@string/title_activity_new_company" >
         </activity>
         <activity
-            android:name=".CompanyMembers"
+            android:name=".ManageMembers"
             android:label="@string/title_activity_company_members" >
+        </activity>
+        <activity
+            android:name=".ManageClients"
+            android:label="@string/title_activity_manage_clients" >
+        </activity>
+        <activity
+            android:name=".AddClient"
+            android:label="@string/title_activity_add_client" >
         </activity>
     </application>
 

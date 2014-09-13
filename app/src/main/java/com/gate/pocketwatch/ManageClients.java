@@ -8,42 +8,30 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-/*
- *
- * This screen is for an admin to make a new team or company.
- * It needs input for Company Username, Team Name (if applicable?), Company (Team?) Login Password,
- *
- * After succefully putting information into a Google Cloud Endpoint
- * it will move to either:
- *
- *  NewMember.java (for if the admin wishes to create a standard user)
- *  ManageMembers.java  (perhaps this should be the default)
- *
- */
 
-public class NewCompany extends Activity {
+public class ManageClients extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_company);
+        setContentView(R.layout.activity_manage_clients);
 
 
-        Button addscompany = (Button) findViewById(R.id.addscompanyb);
 
-        addscompany.setOnClickListener(new View.OnClickListener() {
+        Button addclient = (Button) findViewById(R.id.addclientb);
 
+
+
+        //For Creating a new Company
+        addclient.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-
-                Intent i = new Intent(getApplicationContext(), ManageMembers.class);
-
+                //Perhaps this should link to a page that edits a file rather than specificly creates, thus the edit and create are the same class?
+                Intent i = new Intent(getApplicationContext(), AddClient.class);
                 startActivity(i);
             }
-        }
-
-        );
+        });
 
 
     }
@@ -52,7 +40,7 @@ public class NewCompany extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.new_company, menu);
+        getMenuInflater().inflate(R.menu.manage_clients, menu);
         return true;
     }
 

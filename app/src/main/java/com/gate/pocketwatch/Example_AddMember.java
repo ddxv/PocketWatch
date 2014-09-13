@@ -3,6 +3,7 @@ package com.gate.pocketwatch;
 /**
  * Created by ddxv on 9/11/2014.
  * from tutorial: http://www.tutorialsbuzz.com/2013/11/android-sqlite-database-with.html
+ * These example files also refer to DBHelper
  */
 
 
@@ -15,7 +16,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class Add_member extends Activity implements OnClickListener {
+public class Example_AddMember extends Activity implements OnClickListener {
     EditText et;
     Button add_bt, read_bt;
     SQLController dbcon;
@@ -41,7 +42,7 @@ public class Add_member extends Activity implements OnClickListener {
             case R.id.add_bt_id:
                 String name = et.getText().toString();
                 dbcon.insertData(name);
-                Intent main = new Intent(Add_member.this, MembersActivity.class)
+                Intent main = new Intent(Example_AddMember.this, Example_MembersActivity.class)
                         .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(main);
                 break;

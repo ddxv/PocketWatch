@@ -2,6 +2,7 @@ package com.gate.pocketwatch;
 
 /**
  * Created by ddxv on 9/11/2014.
+ *
  * based on tutorial: http://www.tutorialsbuzz.com/2013/11/android-sqlite-database-with.html
  *
  */
